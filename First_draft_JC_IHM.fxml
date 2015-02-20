@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <SplitPane dividerPositions="0.12040133779264214" layoutX="185.0" layoutY="50.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="84.0" prefWidth="798.0">
+                     <children>
+                        <ImageView fitHeight="129.0" fitWidth="816.0" layoutY="-48.0" opacity="0.27">
+                           <image>
+                              <Image url="@../Downloads/slide11.png" />
+                           </image>
+                        </ImageView>
+                        <HBox layoutX="14.0" layoutY="19.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="19.0" text="Agent n° :" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="-5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button id="logout" fx:id="logout" layoutX="681.0" layoutY="19.0" mnemonicParsing="false" text="Déconnection">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Hyperlink id="profil" fx:id="profil" layoutX="602.0" layoutY="20.0" text="Profil" textFill="#4c09dd">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Hyperlink>
+                        <TextField id="id_agent" fx:id="id" layoutX="80.0" layoutY="16.0" prefHeight="38.0" prefWidth="149.0" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="16.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <VBox layoutY="24.0" prefHeight="494.0" prefWidth="798.0">
+                           <children>
+                              <TabPane prefHeight="518.0" prefWidth="798.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Fomations accessibles">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <SplitPane dividerPositions="0.16080402010050251" layoutX="84.0" layoutY="59.0" prefHeight="489.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                  <items>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                         <children>
+                                                            <TreeView layoutX="-49.0" layoutY="21.0" prefHeight="531.0" prefWidth="125.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                                            <VBox layoutX="27.0" layoutY="64.0" prefHeight="473.0" prefWidth="72.0" spacing="17.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="26.0">
+                                                               <children>
+                                                                  <Hyperlink id="ACC1" fx:id="acc1" layoutX="33.0" layoutY="53.0" text="ACC1" textFill="#e70d0d" />
+                                                                  <Hyperlink fx:id="acc2" layoutX="33.0" layoutY="87.0" text="ACC2" textFill="#e70d0d" />
+                                                                  <Hyperlink id="ABR1" fx:id="abr1" layoutX="33.0" layoutY="125.0" text="ABR1" textFill="#e70d0d" />
+                                                                  <Hyperlink fx:id="inc2" layoutX="33.0" layoutY="235.0" text="INC2" textFill="#e70d0d" />
+                                                                  <Hyperlink fx:id="cha1" layoutX="33.0" layoutY="274.0" text="CHA1" textFill="#e70d0d" />
+                                                                  <Hyperlink fx:id="cha2" layoutX="33.0" layoutY="316.0" text="CHA2" textFill="#e70d0d" />
+                                                                  <Hyperlink fx:id="eau1" layoutX="33.0" layoutY="357.0" text="EAU1" textFill="#e70d0d" />
+                                                                  <Hyperlink fx:id="eau2" layoutX="33.0" layoutY="399.0" text="EAU2" textFill="#e70d0d" />
+                                                                  <Hyperlink id="ABR2" fx:id="abr2" layoutX="33.0" layoutY="159.0" text="ABR2" textFill="#e70d0d" />
+                                                                  <Hyperlink id="INC1" fx:id="inc1" layoutX="33.0" layoutY="200.0" text="INC1" textFill="#e70d0d" />
+                                                               </children>
+                                                               <opaqueInsets>
+                                                                  <Insets />
+                                                               </opaqueInsets>
+                                                            </VBox>
+                                                            <Label layoutX="22.0" layoutY="25.0" prefHeight="20.0" prefWidth="83.0" text="Formations :" textFill="#430ad3" underline="true">
+                                                               <font>
+                                                                  <Font name="System Bold Italic" size="14.0" />
+                                                               </font>
+                                                               <padding>
+                                                                  <Insets left="-10.0" />
+                                                               </padding>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="636.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.45306859205776173" layoutX="152.0" layoutY="100.0" prefHeight="487.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TreeView id="ACC2" layoutX="66.0" layoutY="94.0" prefHeight="514.0" prefWidth="297.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                        <SplitPane dividerPositions="0.5922131147540983" layoutX="69.0" layoutY="157.0" orientation="VERTICAL" prefHeight="490.0" prefWidth="297.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                          <items>
+                                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                                                 <children>
+                                                                                    <Label layoutX="107.0" layoutY="14.0" prefHeight="38.0" prefWidth="66.0" text="Sessions : " textFill="#470ee4" underline="true">
+                                                                                       <font>
+                                                                                          <Font name="System Bold Italic" size="14.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                    <TextField fx:id="session" layoutX="6.0" layoutY="50.0" prefHeight="227.0" prefWidth="286.0" />
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                                                 <children>
+                                                                                    <Label layoutX="71.0" layoutY="14.0" text="Informations détaillées" textFill="#240cfc">
+                                                                                       <font>
+                                                                                          <Font name="System Bold Italic" size="14.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                    <Button layoutX="207.0" layoutY="157.0" mnemonicParsing="false" text="Candidater" />
+                                                                                    <Button layoutX="14.0" layoutY="157.0" mnemonicParsing="false" text="Retirer" />
+                                                                                    <TextArea fx:id="info" layoutX="2.0" layoutY="35.0" prefHeight="116.0" prefWidth="291.0" />
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                          </items>
+                                                                        </SplitPane>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TreeView layoutX="24.0" layoutY="25.0" prefHeight="514.0" prefWidth="360.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                        <VBox layoutX="10.0" layoutY="24.0" prefHeight="454.0" prefWidth="340.0">
+                                                                           <children>
+                                                                              <Label layoutX="136.0" layoutY="31.0" text="Descriptions :" textFill="#400af2" underline="true">
+                                                                                 <font>
+                                                                                    <Font name="System Bold Italic" size="14.0" />
+                                                                                 </font>
+                                                                                 <VBox.margin>
+                                                                                    <Insets left="130.0" />
+                                                                                 </VBox.margin>
+                                                                                 <padding>
+                                                                                    <Insets bottom="7.0" />
+                                                                                 </padding>
+                                                                              </Label>
+                                                                              <TextField layoutX="10.0" layoutY="51.0" prefHeight="416.0" prefWidth="340.0">
+                                                                                 <VBox.margin>
+                                                                                    <Insets />
+                                                                                 </VBox.margin>
+                                                                              </TextField>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </items>
+                                                </SplitPane>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Etats des candidatures">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <SplitPane dividerPositions="0.7060301507537688" layoutX="274.0" layoutY="99.0" prefHeight="518.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <items>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                  </items>
+                                                </SplitPane>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Statut">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <SplitPane dividerPositions="0.6105527638190955" layoutX="173.0" layoutY="65.0" prefHeight="518.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <items>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                  </items>
+                                                </SplitPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="-27.0" layoutY="-5.0" prefHeight="32.0" prefWidth="828.0">
+                           <children>
+                              <RadioButton fx:id="apprenant" mnemonicParsing="false" text="Apprenant">
+                                 <HBox.margin>
+                                    <Insets left="50.0" right="-100.0" top="6.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton fx:id="formateur" mnemonicParsing="false" text="Formateur">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="6.0" />
+                                 </HBox.margin>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
